@@ -6,7 +6,7 @@
 %define _unitdir %{_exec_prefix}/lib/systemd/system
 
 Name:           python-%{pypi_name}
-Version:        0.15
+Version:        0.16
 Release:        1%{?dist}
 Summary:        Validity fingerprint sensor driver
 
@@ -109,5 +109,5 @@ fi
 %{_datadir}/selinux/packages/python3-validity.pp.bz2
 
 %changelog
-* Sat Oct 21 2023 Benjamin Manuel <ben@benmanuel.com> - 0.15-1
+* Sat Oct 21 2023 Benjamin Manuel <ben@benmanuel.com> - 0.16-1
 Update to latest commit to allow Silverblue insallation
