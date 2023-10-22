@@ -6,13 +6,13 @@
 %define _unitdir %{_exec_prefix}/lib/systemd/system
 
 Name:           python-%{pypi_name}
-Version:        0.18
-Release:        1%{?dist}
+Version:        0.19
+Release:        2
 Summary:        Validity fingerprint sensor driver
 
 License:        MIT
 URL:            https://github.com/bmanuel/%{name}
-Source0:        %{name}-%{version}.tar.xz
+Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
 
 Requires:       selinux-policy >= %{selinux_policyver}
@@ -109,6 +109,9 @@ fi
 %{_datadir}/selinux/packages/python3-validity.pp.bz2
 
 %changelog
+* Sun Oct 22 2023 Benjamin Manuel <ben@benmanuel.com> 0.19-2
+- Fix source package type
+
 * Sun Oct 22 2023 Benjamin Manuel <ben@benmanuel.com> 0.18-1
 - Get copr release working 
 
