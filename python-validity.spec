@@ -6,12 +6,12 @@
 %define _unitdir %{_exec_prefix}/lib/systemd/system
 
 Name:           python-%{pypi_name}
-Version:        0.19
-Release:        2
+Version:        0.16
+Release:        2%{?dist}
 Summary:        Validity fingerprint sensor driver
 
 License:        MIT
-URL:            https://github.com/bmanuel/%{name}
+URL:            https://github.com/appelgriebsch/%{name}
 Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
 
